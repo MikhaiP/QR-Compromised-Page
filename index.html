@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Security Notice</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #111;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    .card {
+      max-width: 480px;
+      padding: 2rem;
+      border: 1px solid #444;
+      border-radius: 12px;
+      background: #1c1c1c;
+    }
+    h1 { color: #ff5252; }
+    a.button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background: #ff5252;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>⚠️ You’ve been compromised</h1>
+    <p>This is a simulated security awareness message.</p>
+    <p>You will be redirected shortly…</p>
+    <a class="button" href="https://support.microsoft.com/en-us/security/protect-yourself-from-phishing">Continue now</a>
+  </div>
+
+  <script>
+    // Auto-redirect after 5 seconds
+    setTimeout(function () {
+      window.location.href = "https://support.microsoft.com/en-us/security/protect-yourself-from-phishing";
+    }, 5000);
+  </script>
+</body>
+</html>
